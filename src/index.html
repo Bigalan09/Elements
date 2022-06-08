@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Elements</title>
+
+    <script type="module" src="/build/elements.esm.js"></script>
+    <script nomodule src="/build/elements.js"></script>
+  </head>
+  <body>
+    <el-toast id="toast-1">Hello</el-toast>
+    <script>
+      (async () => {
+        await customElements.whenDefined('el-toast');
+
+        const toast1 = document.querySelector('#toast-1');
+        await toast1.open();
+
+        toast1.addEventListener('el-toast-closed', async event => {
+          // document.body.removeChild(toast1);
+          console.log("closed");
+        });
+      })();
+    </script>
+  </body>
+</html>

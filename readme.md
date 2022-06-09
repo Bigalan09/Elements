@@ -37,7 +37,7 @@ Need help? Check out our docs [here](https://stenciljs.com/docs/my-first-compone
 
 ## Naming Components
 
-When creating new component tags, use the prefix `el` (ex: `<el-datepicker>`).
+When creating new component tags, use the prefix `el` (ex: `<el-grid>`).
 
 
 ## Using this component

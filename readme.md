@@ -6,12 +6,11 @@ A standalone Web Component library using Stencil.
 
 ## Getting Started
 
-To start building a new web component using Stencil, clone this repo to a new directory:
+To start contributing to Elements web component library using Stencil, clone this repo:
 
 ```bash
-git clone https://github.com/ionic-team/stencil-component-starter.git my-component
-cd my-component
-git remote rm origin
+git clone https://github.com/GamesSquared/Elements.git
+cd Elements
 ```
 
 and run:

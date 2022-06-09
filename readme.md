@@ -37,9 +37,7 @@ Need help? Check out our docs [here](https://stenciljs.com/docs/my-first-compone
 
 ## Naming Components
 
-When creating new component tags, we recommend _not_ using `stencil` in the component name (ex: `<stencil-datepicker>`). This is because the generated component has little to nothing to do with Stencil; it's just a web component!
-
-Instead, use the prefix `el` (ex: `<el-datepicker>`).
+When creating new component tags, use the prefix `el` (ex: `<el-datepicker>`).
 
 
 ## Using this component
@@ -50,15 +48,15 @@ The first step for all three of these strategies is to [publish to NPM](https://
 
 ### Script tag
 
-- Put a script tag similar to this `<script type='module' src='https://unpkg.com/my-component@0.0.1/dist/my-component.esm.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<script type='module' src='https://unpkg.com/elements@0.0.1/dist/elements.esm.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
-- Run `npm install my-component --save`
-- Put a script tag similar to this `<script type='module' src='node_modules/my-component/dist/my-component.esm.js'></script>` in the head of your index.html
+- Run `npm install elements --save`
+- Put a script tag similar to this `<script type='module' src='node_modules/elements/dist/elements.esm.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### In a stencil-starter app
-- Run `npm install my-component --save`
-- Add an import to the npm packages `import my-component;`
+- Run `npm install elements --save`
+- Add an import to the npm packages `import elements;`
 - Then you can use the element anywhere in your template, JSX, html etc

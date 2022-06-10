@@ -1,0 +1,100 @@
+.el-layout-top {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 72px auto 0px;
+}
+
+.el-layout {
+  position: relative;
+  padding: 0px 16px;
+  margin: 48px auto 36px;
+  margin-top: 48px;
+  margin-bottom: 36px;
+}
+
+.el-layout.el-layout-has-top {
+  margin-top: 0px;
+}
+
+@media (min-width: 76.25em) {
+  .el-layout {
+    max-width: 1110px;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 62em) {
+  .el-layout {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 56px;
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: 36em) {
+  .el-layout {
+    padding: 0px 28px;
+  }
+}
+
+@media (min-width: 36em) {
+  .el-layout {
+    margin-top: 72px;
+  }
+}
+
+@media (min-width: 62em) {
+  .has-sidebar .el-main {
+    max-width: 734px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 62em) {
+  .el-main {
+    min-width: 600px;
+    margin: 0px auto;
+    margin-right: auto;
+  }
+}
+
+.el-main,
+.el-sidebar,
+.el-layout-top,
+.el-layout-bottom {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 62em) {
+  .el-sidebar {
+    min-width: 256px;
+    max-width: 356px;
+  }
+}
+
+@media (min-width: 76.25em) {
+  .el-layout-top .el-layout-top-wrapper {
+    max-width: 1110px;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 62em) {
+  .el-layout-top .el-layout-top-wrapper {
+    padding: 0px 56px;
+  }
+}
+
+@media (min-width: 36em) {
+  .el-layout-top .el-layout-top-wrapper {
+    padding: 0px 28px;
+  }
+}
+
+.el-layout-top .el-layout-top-wrapper {
+  padding: 0px 20px;
+  margin: 0px auto;
+}

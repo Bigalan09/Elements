@@ -9,7 +9,14 @@
     <script nomodule src="/build/elements.js"></script>
   </head>
   <body>
-    <el-toast id="toast-1">Hello</el-toast>
+    <el-layout>
+      <div slot="top1">Menu</div>
+      <div slot="sidebar">Side Nav</div>
+      <div slot="main">
+        Canvas<br />
+        <el-toast id="toast-1">Hello</el-toast>
+      </div>
+    </el-layout>
     <script>
       (async () => {
         await customElements.whenDefined('el-toast');
@@ -18,8 +25,7 @@
         await toast1.open();
 
         toast1.addEventListener('el-toast-closed', async event => {
-          // document.body.removeChild(toast1);
-          console.log("closed");
+          toast1.remove();
         });
       })();
     </script>

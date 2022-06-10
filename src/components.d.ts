@@ -6,6 +6,11 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface ElLayout {
+        "center": boolean;
+        "margin": 'auto' | 'none';
+        "middle": boolean;
+    }
     interface ElToast {
         "fadeDuration"?: number;
         "open": () => Promise<void>;
@@ -21,6 +26,12 @@ export interface ElToastCustomEvent<T> extends CustomEvent<T> {
     target: HTMLElToastElement;
 }
 declare global {
+    interface HTMLElLayoutElement extends Components.ElLayout, HTMLStencilElement {
+    }
+    var HTMLElLayoutElement: {
+        prototype: HTMLElLayoutElement;
+        new (): HTMLElLayoutElement;
+    };
     interface HTMLElToastElement extends Components.ElToast, HTMLStencilElement {
     }
     var HTMLElToastElement: {
@@ -28,10 +39,16 @@ declare global {
         new (): HTMLElToastElement;
     };
     interface HTMLElementTagNameMap {
+        "el-layout": HTMLElLayoutElement;
         "el-toast": HTMLElToastElement;
     }
 }
 declare namespace LocalJSX {
+    interface ElLayout {
+        "center"?: boolean;
+        "margin"?: 'auto' | 'none';
+        "middle"?: boolean;
+    }
     interface ElToast {
         "fadeDuration"?: number;
         "onEl-toast-closed"?: (event: ElToastCustomEvent<void>) => void;
@@ -42,6 +59,7 @@ declare namespace LocalJSX {
         "variant"?: 'primary' | 'secondary' | 'tertiary';
     }
     interface IntrinsicElements {
+        "el-layout": ElLayout;
         "el-toast": ElToast;
     }
 }
@@ -49,6 +67,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "el-layout": LocalJSX.ElLayout & JSXBase.HTMLAttributes<HTMLElLayoutElement>;
             "el-toast": LocalJSX.ElToast & JSXBase.HTMLAttributes<HTMLElToastElement>;
         }
     }

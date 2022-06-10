@@ -26,7 +26,7 @@ export class Layout {
   }
 
   render() {
-    /// this.checkSlot();
+    this.checkSlot();
     console.log("top:", this.hasTopSlot, "- main:", this.hasMainSlot, "- sidebar:", this.hasSidebarSlot);
     return (
       <Host>

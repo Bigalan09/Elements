@@ -1,3 +1,230 @@
 :root {
-    --color-white: #ffffff;
+  /* Colors */
+  --color-primary-dark: #d6338f;
+  --color-primary: #f86abb;
+  --color-primary-light: #ff81c8;
+  --color-primary-lighter: #fa9ad1;
+  --color-primary-lightest: #fab7dd;
+
+  --color-secondary-dark: #5db6ca;
+  --color-secondary: #8be9fd;
+  --color-secondary-light: #bee0e7;
+
+  --color-danger: #b91b1b;
+  --color-warning: #ecd02d;
+  --color-success: #28b457;
+
+  --color-data-01: #d34448;
+  --color-data-02: #50fa7b;
+  --color-data-03: #f1fa8c;
+  --color-data-04: #bd93f9;
+  --color-data-05: #ff79c6;
+  --color-data-06: #6495ed;
+  --color-data-07: #faffdf;
+  --color-data-08: #66cfbc;
+  --color-data-09: #a8014e;
+  --color-data-10: #7a01c4;
+
+  --color-white: hsl(218, 8%, 94%);
+  --color-gray-lightest: hsl(218, 8%, 84%);
+  --color-gray-lighter: hsl(218, 8%, 74%);
+  --color-gray-light: hsl(218, 8%, 64%);
+  --color-gray: hsl(218, 8%, 54%);
+  --color-gray-dark: hsl(218, 8%, 44%);
+  --color-gray-darker: hsl(218, 8%, 34%);
+  --color-gray-darkest: hsl(218, 8%, 24%);
+  --color-black: hsl(218, 8%, 14%);
+
+  --color-well-light: #44475a;
+  --color-well: #363948;
+  --color-well-dark: #3a3d4d;
+
+  --color-disabled: #66cfbc;
+  --color-background-primary: #282a36;
+  --color-background-secondary: #21222c;
+
+  /* Fonts */
+  --font-family-header: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-family-text: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --letter-spacing-heading: -0.01rem;
+  --font-weight-normal: 400;
+  --font-weight-semi-bold: 600;
+  --font-weight-extra-bold: 800;
+  --font-size-small: 0.875rem;
+  --font-size-medium: 1rem;
+  --font-size-large: 1.25rem;
+  --font-size-x-large: 1.5rem;
+  --font-size-xx-large: 2.25rem;
+  --font-size-xxx-large: 3rem;
+
+  /* Border Radius */
+  --radius-sharp: 0;
+  --radius-pill: 20rem;
+  --radius-default: 4px;
+  --radius-circle: 50%;
+
+  /* Box Shadow */
+  --shadow-hover: 0 2px 10px 0 rgba(0, 41, 77, 0.1);
+  --shadow-modal: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
+  --shadow-default: 0 2px 6px 0 rgba(0, 41, 77, 0.07);
+  --shadow-card: 0 2px 6px 0 rgba(0, 41, 77, 0.07), 0 -1px 0 0 rgba(0, 0, 0, 0.09), -1px 0 0 0 rgba(0, 0, 0, 0.07), 1px 0 0 0 rgba(0, 0, 0, 0.07), 0 1px 0 0 rgba(0, 0, 0, 0.07);
+
+  /* Space */
+  --space-xxx-small: 2px;
+  --space-xx-small: 4px;
+  --space-x-small: 8px;
+  --space-small: 12px;
+  --space-medium: 16px;
+  --space-large: 20px;
+  --space-x-large: 28px;
+  --space-xx-large: 36px;
+  --space-xxx-large: 48px;
+  --space-xxxx-large: 72px;
+  --space-xxxxx-large: 94px;
+
+  /* Sizes */
+  --size-layout-max-width: 1120px;
+  --size-button-tiny-border: 1px;
+  --size-button-border: 2px;
+  --size-form-border: 1px;
+  --size-step-small: 30px;
+  --size-step-medium: 40px;
+  --size-step-large: 50px;
+  --size-tappable-square: 48px;
+  --size-navigation: 3rem;
+  --size-header: 4rem;
+  --size-button-min-width: 8rem;
+
+  /* Opacity */
+  --opacity-30: 0.3;
+  --opacity-50: 0.5;
+  --opacity-75: 0.75;
+  --opacity-85: 0.85;
+
+  /* Z-Index */
+  --z-index-deep: -999999;
+  --z-index-default: 1;
+  --z-index-masked: 100;
+  --z-index-mask: 200;
+  --z-index-mask-buttons: 250;
+  --z-index-sticky: 300;
+  --z-index-header: 400;
+  --z-index-toast: 500;
+  --z-index-dropdown: 600;
+  --z-index-overlay: 700;
+  --z-index-spinner: 800;
+  --z-index-modal: 900;
+  --z-index-popup: 950;
+
+  /* Line Height */
+  --line-height-x-small: 1.1;
+  --line-height-small: 1.25;
+  --line-height-medium: 1.5;
+  --line-height-large: 2;
+  --line-height-x-large: 2.25;
+
+  /* Media Query */
+  --media-query-xx-small: '(max-width: 22.5em)'; /* 0-360px */
+  --media-query-x-small: '(max-width: 35.9375em)'; /* 0-575px */
+  --media-query-small: '(min-width: 36em)'; /* 576px or more */
+  --media-query-medium: '(min-width: 48m)'; /* 768px or more */
+  --media-query-large: '(min-width: 62em)'; /* 992px or more */
+  --media-query-x-large: '(min-width: 64.0625em)'; /* 1025px or more */
+  --media-query-xx-large: '(min-width: 76.25em)'; /* 1220px or more */
+  --media-query-xxx-large: '(min-width: 106.25em)'; /* 1700px or more */
+}
+
+/* Reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: var(--line-height-medium);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Body */
+body,
+button,
+input,
+select,
+textarea {
+  font-family: var(--font-family-text);
+}
+
+body {
+  color: var(--color-black);
+  line-height: var(--line-height-medium);
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
 }

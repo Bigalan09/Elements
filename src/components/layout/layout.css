@@ -2,15 +2,15 @@
   position: relative;
   display: block;
   width: 100%;
-  margin: 72px auto 0px;
+  margin: var(--space-xxxx-large) auto 0px;
 }
 
 .el-layout {
   position: relative;
-  padding: 0px 16px;
-  margin: 48px auto 36px;
-  margin-top: 48px;
-  margin-bottom: 36px;
+  padding: 0px var(--space-medium);
+  margin: var(--space-xxx-large) auto var(--space-xx-large);
+  margin-top: var(--space-xxx-large);
+  margin-bottom: var(--space-xx-large);
 }
 
 .el-layout.el-layout-has-top {
@@ -19,7 +19,7 @@
 
 @media (min-width: 76.25em) {
   .el-layout {
-    max-width: 1110px;
+    max-width: var(--size-layout-max-width);
     padding: 0px;
   }
 }
@@ -28,27 +28,27 @@
   .el-layout {
     display: flex;
     flex-direction: row;
-    padding: 0px 56px;
-    margin-bottom: 48px;
+    padding: 0px var(--space-xxx-large);
+    margin-bottom: var(--space-xxx-large);
   }
 }
 
 @media (min-width: 36em) {
   .el-layout {
-    padding: 0px 28px;
+    padding: 0px var(--space-x-large);
   }
 }
 
 @media (min-width: 36em) {
   .el-layout {
-    margin-top: 72px;
+    margin-top: var(--space-xxxx-large);
   }
 }
 
 @media (min-width: 62em) {
   .has-sidebar .el-main {
     max-width: 734px;
-    margin-right: 20px;
+    margin-right: var(--size-icon-small);
   }
 }
 
@@ -77,24 +77,24 @@
 
 @media (min-width: 76.25em) {
   .el-layout-top .el-layout-top-wrapper {
-    max-width: 1110px;
+    max-width: var(--size-layout-max-width);
     padding: 0px;
   }
 }
 
 @media (min-width: 62em) {
   .el-layout-top .el-layout-top-wrapper {
-    padding: 0px 56px;
+    padding: 0px var(--size-icon-xx-large);
   }
 }
 
 @media (min-width: 36em) {
   .el-layout-top .el-layout-top-wrapper {
-    padding: 0px 28px;
+    padding: 0px var(--size-icon-medium);
   }
 }
 
 .el-layout-top .el-layout-top-wrapper {
-  padding: 0px 20px;
+  padding: 0px var(--space-large);
   margin: 0px auto;
 }

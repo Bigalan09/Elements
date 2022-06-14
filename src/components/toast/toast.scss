@@ -1,5 +1,6 @@
+// toast.scss
+
 :host {
-  --font-family: Arial, Helvetica, sans-serif;
   --font-size: 14px;
   --width: 30%;
   --text-color: #ffffff;
@@ -11,7 +12,7 @@
 }
 
 .toast {
-  font-family: var(--font-family);
+  font-family: $font-family-text;
   font-size: var(--font-size);
   width: var(--width);
   display: flex;

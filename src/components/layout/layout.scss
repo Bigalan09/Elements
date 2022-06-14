@@ -1,3 +1,8 @@
+// layout.scss
+:host {
+  font-family: $font-family-text;
+}
+
 .el-layout-top {
   position: relative;
   display: block;

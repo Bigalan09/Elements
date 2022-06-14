@@ -3,6 +3,7 @@ import { sass } from '@stencil/sass';
 
 export const config: Config = {
   namespace: 'elements',
+  globalStyle: 'src/global/elements.css',
   outputTargets: [
     {
       type: 'dist',
@@ -21,9 +22,7 @@ export const config: Config = {
   ],
   plugins: [
     sass({
-      injectGlobalPaths: [
-        'src/globals/elements.scss'
-      ]
+      injectGlobalPaths: ["src/global/variables.scss"]
     })
   ]
 };

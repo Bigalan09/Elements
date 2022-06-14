@@ -26,10 +26,10 @@
     "generate": "stencil generate"
   },
   "dependencies": {
-    "@stencil/core": "^2.13.0"
+    "@stencil/core": "^2.13.0",
+    "@stencil/sass": "^1.5.2"
   },
   "devDependencies": {
-    "@stencil/sass": "^1.5.2",
     "@types/jest": "^27.0.3",
     "classnames": "^2.2.6",
     "jest": "^27.4.5",

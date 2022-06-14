@@ -19,11 +19,17 @@
     "loader/"
   ],
   "scripts": {
+    "dev": "concurrently -n storybook,stencil -c \"bgMagenta.bold,bgBlue.bold,bgCyan.bold\" \"npm:watch:storybook\" \"npm:watch:stencil\"",
+    "watch:storybook": "start-storybook -p 7001 --ci --quiet",
+    "watch:stencil": "stencil build --watch --serve --port 7002",
     "build": "stencil build --docs",
+    "build.watch": "stencil build --watch",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "storybook": "start-storybook -p 7006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@stencil/core": "^2.13.0",
@@ -31,10 +37,18 @@
   },
   "devDependencies": {
     "@types/jest": "^27.0.3",
+    "@babel/core": "^7.17.9",
+    "@storybook/addon-actions": "^6.4.22",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-links": "^6.4.22",
+    "@storybook/html": "^6.4.22",
     "classnames": "^2.2.6",
     "jest": "^27.4.5",
     "jest-cli": "^27.4.5",
-    "puppeteer": "^14.3.0"
+    "puppeteer": "^14.3.0",
+    "concurrently": "^6.0.0",
+    "http-proxy-middleware": "^1.1.0",
+    "wait-on": "^5.3.0"
   },
   "license": "MIT"
 }

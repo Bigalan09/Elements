@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 @Component({
   tag: 'el-toast',
-  styleUrl: 'toast.css',
+  styleUrl: 'toast.scss',
   shadow: true,
 })
 export class Toast {

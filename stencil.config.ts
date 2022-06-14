@@ -1,8 +1,8 @@
 import { Config } from '@stencil/core';
+import { sass } from '@stencil/sass';
 
 export const config: Config = {
   namespace: 'elements',
-  globalStyle: 'src/global/elements.css',
   outputTargets: [
     {
       type: 'dist',
@@ -19,4 +19,11 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
   ],
+  plugins: [
+    sass({
+      injectGlobalPaths: [
+        'src/globals/elements.scss'
+      ]
+    })
+  ]
 };

@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 @Component({
   tag: 'el-layout',
-  styleUrl: 'layout.css',
+  styleUrl: 'layout.scss',
   shadow: true,
 })
 export class Layout {

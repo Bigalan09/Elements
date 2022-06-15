@@ -120,16 +120,6 @@
   --line-height-medium: 1.5;
   --line-height-large: 2;
   --line-height-x-large: 2.25;
-
-  /* Media Query (use with scss only) reference */
-  --media-query-xx-small: '(max-width: 22.5em)'; /* 0-360px */
-  --media-query-x-small: '(max-width: 35.9375em)'; /* 0-575px */
-  --media-query-small: '(min-width: 36em)'; /* 576px or more */
-  --media-query-medium: '(min-width: 48m)'; /* 768px or more */
-  --media-query-large: '(min-width: 62em)'; /* 992px or more */
-  --media-query-x-large: '(min-width: 64.0625em)'; /* 1025px or more */
-  --media-query-xx-large: '(min-width: 76.25em)'; /* 1220px or more */
-  --media-query-xxx-large: '(min-width: 106.25em)'; /* 1700px or more */
 }
 
 /* Reset */

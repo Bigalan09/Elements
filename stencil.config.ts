@@ -22,7 +22,10 @@ export const config: Config = {
   ],
   plugins: [
     sass({
-      injectGlobalPaths: ["src/global/variables.scss"]
+      injectGlobalPaths: [
+        "src/global/variables.scss",
+        "node_modules/include-media/dist/_include-media.scss"
+      ]
     })
   ]
 };

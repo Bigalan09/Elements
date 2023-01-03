@@ -39,9 +39,9 @@
   "devDependencies": {
     "@babel/core": "^7.17.9",
     "@storybook/addon-actions": "^6.4.22",
-    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-essentials": "^6.5.15",
     "@storybook/addon-links": "^6.4.22",
-    "@storybook/html": "^6.1.21",
+    "@storybook/html": "^6.5.9",
     "@types/jest": "^27.0.3",
     "classnames": "^2.2.6",
     "concurrently": "^6.0.0",
